@@ -1,4 +1,4 @@
-package com.tjouen.ilsan;
+package com.tjoeun.ilsan;
 
 import java.text.DateFormat;
 import java.util.Date;

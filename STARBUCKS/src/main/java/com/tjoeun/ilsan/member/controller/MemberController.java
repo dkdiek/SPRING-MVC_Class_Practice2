@@ -1,4 +1,4 @@
-package com.tjouen.ilsan.member.controller;
+package com.tjoeun.ilsan.member.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.tjouen.ilsan.member.service.MemberService;
+import com.tjoeun.ilsan.member.service.MemberServiceImpl;
 
 @Controller // 1. Controller annotation + servlet-context에 <context:component-scan base-package="com.tjouen.ilsan" /> 로 스캔
 public class MemberController {
@@ -19,7 +19,7 @@ public class MemberController {
 	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
 	
 	@Autowired // new하지 않고 memberService di 자동으로 bean이 singletone으로 inject된다
-	MemberService memberservice;
+	MemberServiceImpl memberservice;
 	
 	
 	@RequestMapping(value="/member/list", method = RequestMethod.GET) // member/list로 들어오면 메소드 실행 get방식
