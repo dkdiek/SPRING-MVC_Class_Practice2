@@ -16,7 +16,7 @@ public class OrderServiceImpl implements OrderService {
 	OrderInfoDao orderInfoDao;
 	
 	@Override
-	@Transactional(readOnly = true)
+	@Transactional(readOnly = true)//셀렉트는 안해도 상관없음 insert,update는 사영
 	public List<Map> getOrderList() {
 		// TODO Auto-generated method stub
 		return orderInfoDao.selectOrderInfo();
