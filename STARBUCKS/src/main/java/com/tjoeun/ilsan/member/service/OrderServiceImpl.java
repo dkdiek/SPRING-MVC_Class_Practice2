@@ -40,8 +40,8 @@ public class OrderServiceImpl implements OrderService {
 			sum = 6000 * Integer.parseInt(amount);
 		}
 		map.put("sum", sum);
-		map.put("user_id", "hongkd");
-		
+		map.put("user_id", "hongkdManual");
+
 		int count = orderInfoDao.insertOrderInfo(map);
 		if (0 == count) {
 			throw new Exception();

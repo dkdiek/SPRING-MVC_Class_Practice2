@@ -21,7 +21,7 @@ public class OrderController {
 	public String getOrderList(Model model) {
 		
 		model.addAttribute("orderList",orderService.getOrderList());
-		
+
 		return "order/list";
 	}
 	

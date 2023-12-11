@@ -9,6 +9,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		SELECT seq
 				,menu
 		        ,amount
+		        ,sum <!-- 빠져있었음 -->
 		        ,user_id
 		        ,create_date
 		FROM 	starbucks.order_info
