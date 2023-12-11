@@ -7,4 +7,6 @@ public interface OrderInfoDao {
 	
 	public List<Map> selectOrderInfo ();
 
+	public int insertOrderInfo(Map map);
+
 }

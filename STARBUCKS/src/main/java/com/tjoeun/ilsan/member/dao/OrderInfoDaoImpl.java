@@ -21,4 +21,10 @@ public class OrderInfoDaoImpl implements OrderInfoDao {
 		return mapper.selectOrderInfo();
 	}
 
+	@Override
+	public int insertOrderInfo(Map map) {
+		OrderInfoMapper mapper = sqlSession.getMapper(OrderInfoMapper.class);//쿼리문을 부르는 아이디
+		return mapper.insertOrderInfo(map);
+	}
+
 }

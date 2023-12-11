@@ -7,4 +7,5 @@ public interface OrderService {
 	
 	public List<Map> getOrderList();
 	
+	public void order(Map map) throws Exception;
 }
